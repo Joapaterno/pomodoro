@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <!-- Elemento de video que se reproducirá al final de cada ciclo -->
+        <video id="end-video" width="320" height="240" style="display: none;">
+            <source src="video/Efecto de Sonido   Cuervo.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <div class="controls">
+            <button id="start" class="btn">INICIO</button>
+            <button id="pause" class="btn">PAUSA</button>
+            <button id="reset" class="btn">RESET</button>
+            <button id="break" class="btn">DESCANSO (5 min)</button>
+            <button id="work" class="btn">TRABAJO</button>
+        </div>
+        <div class="settings">
+            <label for="work-duration">Work Duration: </label>
+            <input type="number" id="work-duration" value="25" min="1">
+            <label for="break-duration">Break Duration: </label>
+            <input type="number" id="break-duration" value="5" min="1">
+            <button id="save-settings" class="btn">Save Settings</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
